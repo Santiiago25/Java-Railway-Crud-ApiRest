@@ -39,7 +39,7 @@ public class ProductoController {
         Producto productodb = productoService.findById(producto.getId());
         productodb.setNombre(producto.getNombre());
         productodb.setMarca(producto.getMarca());
-        productodb.setModelo(producto.getMarca());
+        productodb.setModelo(producto.getModelo());
         productodb.setStock(producto.isStock());
         return productoService.update(productodb);
     }
